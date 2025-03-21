@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Roommate Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form method="POST" action="{{ url_for('register') }}">
+            <div class="form-group">
+                <label for="first_name">Имя</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Фамилия</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

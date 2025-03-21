@@ -1,0 +1,2 @@
+user_id,created_at,age,sex,budget,city,password_hash,email,phone,verified,description,first_name,last_name
+1,2025-03-21 20:48:10.059489,,,,,$2b$12$9AU3qDBeGBeYykOLGw7CLuJ2bVy3UtaeW/ocYc6gZzWfOeRqPZcKa,juice0lover@gmail.com,+79911566131,0,,Алексей,Загорский
